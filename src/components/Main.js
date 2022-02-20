@@ -10,7 +10,7 @@ export default function Main(props) {
                 <div className="card--header">
                     <i className="fa-solid fa-location-dot"></i>
                     <p>{props.trip.location.toUpperCase()}</p>
-                    <a href={props.trip.googleMapsUrl}>View on Google Maps</a>
+                    <a href={props.trip.googleMapsUrl} target="_blank">View on Google Maps</a>
                 </div>
                 <div className="card--body">
                     <h2>{props.trip.title}</h2>
