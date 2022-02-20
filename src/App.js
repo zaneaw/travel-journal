@@ -6,7 +6,7 @@ import data from "./data";
 export default function App() {
     const trips = data.map(item => {
         return (
-            <Main trip={item} />
+            <Main trip={item} key={item.title}/>
         )
     })
     return (
